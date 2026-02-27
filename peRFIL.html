@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Perfil Profesional - Wilman</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#05070d;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Fondo neón */
+body::before{
+    content:"";
+    position:fixed;
+    width:800px;
+    height:800px;
+    background:radial-gradient(circle, #00e5ff33, transparent 60%);
+    top:-200px;
+    left:-200px;
+    z-index:-1;
+}
+
+/* HEADER */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    color:#00e5ff;
+    text-shadow:0 0 20px #00e5ff;
+}
+
+.hero h2{
+    font-weight:300;
+    margin-top:10px;
+    color:#7de3ff;
+}
+
+/* FOTO */
+.foto{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin:25px auto;
+    border:4px solid #00e5ff;
+    box-shadow:0 0 25px #00e5ff;
+    background:url("my_perfil.jpeg") center/cover;
+}
+
+/* TARJETAS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.card{
+    background:#0c101a;
+    border-radius:16px;
+    padding:20px;
+    box-shadow:0 0 10px #00e5ff44;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 25px #00e5ff;
+}
+
+.card h3{
+    color:#00e5ff;
+    margin-bottom:10px;
+}
+
+/* BOTONES */
+.menu{
+    text-align:center;
+    margin-top:25px;
+}
+
+button{
+    background:#00e5ff22;
+    border:1px solid #00e5ff;
+    color:#00e5ff;
+    padding:10px 18px;
+    margin:6px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#00e5ff;
+    color:black;
+}
+
+/* SECCIONES */
+.seccion{
+    display:none;
+    padding:40px;
+    max-width:900px;
+    margin:auto;
+}
+
+.seccion.activa{
+    display:block;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    opacity:0.5;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <div class="foto"></div>
+    <h1>Wilman Cervantes Romero</h1>
+    <h2>Estudiante de Ingeniería de Sistemas</h2>
+
+    <div class="menu">
+        <button onclick="mostrar('datos')">Datos</button>
+        <button onclick="mostrar('motivacion')">Motivación</button>
+        <button onclick="mostrar('destrezas')">Destrezas</button>
+        <button onclick="mostrar('especializacion')">Especialización</button>
+    </div>
+</div>
+
+<!-- DATOS -->
+<section id="datos" class="seccion activa">
+<div class="grid">
+    <div class="card"><h3>Edad</h3>17</div>
+    <div class="card"><h3>Sexo</h3>Masculino</div>
+    <div class="card"><h3>Correo</h3>wilmancervantesromero1@gmail.com</div>
+    <div class="card"><h3>Teléfono</h3>69674580</div>
+    <div class="card"><h3>Referencia</h3>69673580</div>
+    <div class="card"><h3>Formación</h3>Bachiller + BTH Gastronomía</div>
+    <div class="card"><h3>Idiomas</h3>Español fluido / Inglés medio bajo</div>
+    <div class="card"><h3>Experiencia</h3>Trabajo en construcción
+    exp. soldadura, cocina, carpinteria</div>
+</div>
+</section>
+
+<!-- MOTIVACION -->
+<section id="motivacion" class="seccion">
+<p>
+Elegí Ingeniería de Sistemas porque la tecnología mueve el mundo moderno.
+Quiero aprender a programar, crear aplicaciones y diseñar soluciones que
+faciliten la vida de las personas. Me motiva entender cómo funcionan los
+sistemas desde dentro y construir herramientas útiles, no solo usarlas.
+Busco estabilidad profesional y crecimiento en un área con alta demanda.
+</p>
+</section>
+
+<!-- DESTREZAS -->
+<section id="destrezas" class="seccion">
+<p>
+Necesito fortalecer el pensamiento lógico, la resolución de problemas y la
+disciplina diaria. La programación exige práctica constante, paciencia y
+orden mental. También quiero mejorar mi comunicación y trabajo en equipo
+para desenvolverme mejor en proyectos reales.
+</p>
+</section>
+
+<!-- ESPECIALIZACION -->
+<section id="especializacion" class="seccion">
+<p>
+Mi meta es especializarme en Desarrollo de Software. Deseo crear sistemas,
+aplicaciones web y móviles que automaticen procesos y resuelvan problemas
+reales en empresas, educación y comercio. Transformar ideas en código
+funcional es, básicamente, ingeniería con superpoderes digitales.
+</p>
+</section>
+
+<footer>
+2026 • Perfil profesional interactivo
+</footer>
+
+<script>
+function mostrar(id){
+    document.querySelectorAll(".seccion")
+    .forEach(s => s.classList.remove("activa"));
+
+    document.getElementById(id).classList.add("activa");
+}
+</script>
+
+</body>
+</html>

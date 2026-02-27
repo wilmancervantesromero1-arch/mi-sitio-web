@@ -1,0 +1,483 @@
+!<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Perfil Premium Sayda Serrano - Edición Especialista v2</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&amp;family=Rajdhani:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "gold": "#FFD700",
+                        "gold-dim": "#C5A000",
+                        "gold-light": "#FFF3A0",
+                        "neon-gold": "#FDB813",
+                        "black-pure": "#000000",
+                        "surface-dark": "#0A0A0A",
+                        "surface-card": "#111111",
+                        "text-light": "#F8FAFC",
+                        "text-dim": "#9CA3AF",
+                    },
+                    fontFamily: {
+                        "display": ["Orbitron", "sans-serif"],
+                        "body": ["Rajdhani", "sans-serif"]
+                    },
+                    backgroundImage: {
+                        'gradient-gold': 'linear-gradient(135deg, #FFD700 0%, #FDB813 50%, #B8860B 100%)',
+                        'gradient-dark': 'linear-gradient(to bottom, #000000, #050505)',
+                    },
+                    boxShadow: {
+                        'neon': '0 0 10px rgba(255, 215, 0, 0.3), 0 0 20px rgba(253, 184, 19, 0.2)',
+                        'neon-strong': '0 0 15px rgba(255, 215, 0, 0.5), 0 0 30px rgba(253, 184, 19, 0.3)',
+                        'neon-text': '0 0 5px rgba(255, 215, 0, 0.5)',
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .glass-panel {
+                @apply bg-black/80 backdrop-blur-xl border border-gold/20 shadow-neon;
+            }
+            .text-glow {
+                text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+            }
+            .card-hover {
+                @apply transition-all duration-500 hover:shadow-neon-strong hover:border-gold/60 hover:-translate-y-2;
+            }
+            .clip-tech {
+                clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%);
+            }
+        }
+        body {
+            background-color: #000000;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(255, 215, 0, 0.03) 0%, transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(253, 184, 19, 0.03) 0%, transparent 25%),
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 50px 50px, 50px 50px;
+        }
+    </style>
+</head>
+<body class="bg-black-pure font-body text-text-light antialiased min-h-screen flex flex-col selection:bg-gold/30 selection:text-white">
+<header class="sticky top-0 z-50 w-full border-b border-gold/10 bg-black/80 backdrop-blur-xl">
+<div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-none border border-gold/50 bg-black text-gold shadow-neon transform rotate-45">
+<span class="material-symbols-outlined text-[24px] transform -rotate-45">terminal</span>
+</div>
+<h2 class="ml-2 text-xl font-display font-bold tracking-widest text-white uppercase"><span class="text-gold">Sayda</span>.Dev</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold tracking-wider text-text-dim hover:text-gold hover:text-glow transition-all duration-300 uppercase" href="#">Inicio</a>
+<a class="text-sm font-semibold tracking-wider text-text-dim hover:text-gold hover:text-glow transition-all duration-300 uppercase" href="#education">Educación</a>
+<a class="text-sm font-semibold tracking-wider text-text-dim hover:text-gold hover:text-glow transition-all duration-300 uppercase" href="#motivation">Visión</a>
+<a class="text-sm font-semibold tracking-wider text-text-dim hover:text-gold hover:text-glow transition-all duration-300 uppercase" href="#specialization">Tech</a>
+<a class="text-sm font-semibold tracking-wider text-text-dim hover:text-gold hover:text-glow transition-all duration-300 uppercase" href="#applications">Nexus</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex items-center justify-center border border-gold/50 bg-black/50 px-6 py-2 text-sm font-bold text-gold shadow-neon hover:bg-gold hover:text-black hover:shadow-neon-strong transition-all clip-tech font-display tracking-widest uppercase">
+<span class="mr-2 material-symbols-outlined text-[18px]">download</span>
+                    CV
+                </button>
+<button class="md:hidden p-2 text-gold hover:text-white transition-colors border border-gold/20 rounded-md">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<section class="relative overflow-hidden py-16 lg:py-28">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-gold/5 to-transparent pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-gold/5 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid gap-16 lg:grid-cols-2 lg:gap-12 items-center">
+<div class="order-2 lg:order-1 flex flex-col gap-8">
+
+<div>
+<div class="inline-block px-3 py-1 mb-4 border border-gold/30 rounded-none bg-gold/5 text-gold text-xs font-display tracking-[0.2em] uppercase shadow-neon-text">
+                                Ing. de Sistemas Iniciado 
+                            </div>
+<h1 class="text-5xl font-display font-black tracking-tighter text-white sm:text-6xl lg:text-7xl leading-none">
+                                SAYDA <br/>
+<span class="text-transparent bg-clip-text bg-gradient-gold drop-shadow-sm">SERRANO</span>
+</h1>
+<p class="mt-6 text-xl font-light text-text-dim border-l-2 border-gold/50 pl-6">
+<span class="text-white font-medium">Ingeniería de Sistemas</span> <span class="text-gold mx-2">//</span> Futura Desarrolladora de Software
+                            </p>
+<p class="mt-4 text-base text-slate-400 max-w-lg leading-relaxed font-light">
+                                Transformando conceptos abstractos en realidades digitales. Especializada en lógica computacional y desarrollo de soluciones de alto impacto.
+                            </p>
+</div>
+<div class="flex flex-wrap gap-6">
+<button class="flex items-center justify-center bg-gold text-black-pure px-8 py-4 text-base font-bold shadow-neon hover:shadow-neon-strong hover:bg-white transition-all clip-tech font-display tracking-wider uppercase group">
+<span class="material-symbols-outlined mr-2 group-hover:rotate-90 transition-transform">code</span>
+                                Ver Proyectos
+                            </button>
+<button class="flex items-center justify-center border border-gold text-gold px-8 py-4 text-base font-bold hover:bg-gold/10 hover:shadow-neon transition-all clip-tech font-display tracking-wider uppercase">
+                                Contactar
+                            </button>
+</div>
+<div class="mt-8 flex gap-6 border-t border-white/5 pt-8">
+<div class="group cursor-pointer">
+<p class="text-2xl font-display font-bold text-white group-hover:text-gold transition-colors">18</p>
+<p class="text-xs text-text-dim uppercase tracking-widest">Edad</p>
+</div>
+<div class="w-px h-10 bg-white/10"></div>
+<div class="group cursor-pointer">
+<p class="text-2xl font-display font-bold text-white group-hover:text-gold transition-colors">2025</p>
+<p class="text-xs text-text-dim uppercase tracking-widest">Graduación</p>
+</div>
+<div class="w-px h-10 bg-white/10"></div>
+<div class="group cursor-pointer">
+<p class="text-2xl font-display font-bold text-white group-hover:text-gold transition-colors">Lv.1</p>
+<p class="text-xs text-text-dim uppercase tracking-widest">Semestre</p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 relative group perspective-1000">
+<div class="absolute -inset-1 bg-gradient-gold rounded-none blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"></div>
+<div class="relative aspect-[4/5] w-full max-w-md mx-auto overflow-hidden bg-black border border-gold/20 shadow-2xl clip-tech">
+<img alt="sayda" class="h-full w-full object-cover grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700" src="fto-bby.jpeg"/>
+<div class="absolute inset-0 border border-white/5 pointer-events-none"></div>
+<div class="absolute top-4 right-4 flex gap-1">
+<div class="w-2 h-2 bg-gold animate-pulse"></div>
+<div class="w-2 h-2 bg-gold/50"></div>
+<div class="w-2 h-2 bg-gold/20"></div>
+</div>
+<div class="absolute bottom-0 left-0 w-full bg-black/80 backdrop-blur-md border-t border-gold/30 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+<div class="flex items-center justify-between">
+<div class="text-gold font-display text-sm tracking-wider">ESTADO: ONLINE</div>
+<span class="material-symbols-outlined text-gold animate-pulse">wifi</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-surface-dark border-y border-gold/10 relative" id="education">
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-32 bg-gold shadow-neon"></div>
+<div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row gap-12">
+<div class="md:w-1/3">
+<h2 class="text-4xl font-display font-bold text-white mb-4">LOGS <span class="text-gold">ACADÉMICOS</span></h2>
+<p class="text-text-dim text-sm leading-relaxed">Registro cronológico del desarrollo intelectual y técnico.</p>
+<div class="mt-8 p-4 border border-gold/20 bg-black/50 backdrop-blur-sm rounded-none">
+<span class="material-symbols-outlined text-gold text-4xl mb-2">school</span>
+<div class="h-1 w-12 bg-gold mb-2"></div>
+<p class="text-xs text-gold font-mono">STATUS: EN PROGRESO</p>
+</div>
+</div>
+<div class="md:w-2/3 space-y-8 relative">
+<div class="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-gold via-gold/50 to-transparent md:left-8"></div>
+<div class="relative pl-8 md:pl-16 group">
+<div class="absolute left-[-5px] md:left-[27px] top-1 h-3 w-3 bg-black border border-gold group-hover:bg-gold transition-colors duration-300 shadow-neon"></div>
+<div class="bg-surface-card border border-white/5 p-6 hover:border-gold/40 hover:shadow-neon transition-all duration-300 clip-tech">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+<h3 class="text-xl font-bold text-white group-hover:text-gold transition-colors font-display">Ingeniería de Sistemas</h3>
+<span class="text-xs font-mono text-gold border border-gold/30 px-2 py-1 bg-gold/5">2026 - PRESENTE</span>
+</div>
+<p class="text-sm font-medium text-text-dim mb-3">Universidad San Francisco Xavier</p>
+<p class="text-slate-400 text-sm leading-relaxed">
+                                    Inicialización de protocolos de ingeniería. Enfoque en algoritmos fundamentales y estructura de datos.
+                                </p>
+</div>
+</div>
+<div class="relative pl-8 md:pl-16 group">
+<div class="absolute left-[-5px] md:left-[27px] top-1 h-3 w-3 bg-black border border-white/30 group-hover:border-gold transition-colors duration-300"></div>
+<div class="bg-surface-card border border-white/5 p-6 hover:border-gold/40 hover:shadow-neon transition-all duration-300 clip-tech opacity-80 group-hover:opacity-100">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+<h3 class="text-xl font-bold text-white group-hover:text-gold transition-colors font-display">Bachiller Técnico (Gastronomía)</h3>
+<span class="text-xs font-mono text-slate-500 border border-slate-700 px-2 py-1">FINALIZADO 2025</span>
+</div>
+<p class="text-sm font-medium text-text-dim mb-3">Colegio 23</p>
+<p class="text-slate-400 text-sm leading-relaxed">
+                                    Gestión de procesos complejos y disciplina operativa. Base fundamental de organización.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-black-pure relative overflow-hidden" id="motivation">
+<div class="absolute inset-0 bg-[linear-gradient(rgba(255,215,0,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,215,0,0.05)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-7">
+<div class="relative p-1">
+<div class="absolute inset-0 bg-gradient-gold opacity-20 blur-sm rounded-none"></div>
+<div class="relative bg-surface-card border border-gold/20 p-8 md:p-12 clip-tech">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-4xl text-gold animate-pulse">psychology</span>
+<h2 class="text-3xl font-display font-bold text-white tracking-wide">MOTIVACION PARA ESTUDIAR <span class="text-gold">ING. DE SISTEMAS</span></h2>
+</div>
+<div class="prose prose-invert max-w-none text-lg leading-loose text-slate-300 font-light border-l-2 border-gold/30 pl-6">
+<p>
+<span class="text-gold font-bold">INIT_SEQUENCE:</span> Elegí la carrera de Ingeniería de Sistemas porque considero que es una de las profesiones con mayor crecimiento e impacto en la actualidad. Vivimos en una era digital donde la tecnología forma parte de casi todos los aspectos de nuestra vida, y quiero ser parte de esa transformación. Me interesa comprender cómo funcionan los sistemas, la programación y el desarrollo de soluciones tecnológicas que puedan facilitar la vida de las personas.
+Además, es una carrera con amplias oportunidades laborales tanto a nivel nacional como internacional, lo que representa estabilidad y crecimiento profesional a futuro. También vi en esta carrera una oportunidad para aprovechar mis capacidades y desarrollar nuevas habilidades en el área tecnológica.
+Tomé la decisión con responsabilidad, aprovechando la oportunidad académica que se me presentó, y estoy comprometida a dar lo mejor de mí para formarme como una profesional competente, ética y preparada para los retos del mundo digital.
+                                    </p>
+<p class="mt-4"><span class="text-gold font-bold">DESTREZAS_A_MEJORAR:</span>Desde mi punto de vista, para estudiar Ingeniería de Sistemas necesito fortalecer mi pensamiento lógico y mi capacidad de análisis, ya que la programación requiere resolver problemas paso a paso. También debo mejorar mi disciplina y constancia, porque es una carrera que exige práctica y dedicación.
+Además, considero importante trabajar en mi seguridad al expresarme y en la organización de mi tiempo para cumplir con todas mis responsabilidades. Con esfuerzo, perseverancia y actitud positiva, podré desarrollar estas destrezas y alcanzar mis metas profesionales
+                                
+                                    </p>
+</div>
+<div class="mt-10 flex gap-4">
+<div class="px-4 py-2 border border-gold/30 text-xs font-mono text-gold bg-gold/5 rounded-sm">IA_INTEGRATION</div>
+<div class="px-4 py-2 border border-gold/30 text-xs font-mono text-gold bg-gold/5 rounded-sm">DEV_OPS</div>
+<div class="px-4 py-2 border border-gold/30 text-xs font-mono text-gold bg-gold/5 rounded-sm">BIG_DATA</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="h-full bg-surface-dark border border-white/10 p-8 relative overflow-hidden group hover:border-gold/50 transition-colors duration-500">
+<div class="absolute -right-10 -top-10 text-gold/5 group-hover:text-gold/10 transition-colors">
+<span class="material-symbols-outlined text-[12rem]">bolt</span>
+</div>
+<h3 class="mb-6 text-xl font-display font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-gold">bolt</span>
+                                ACTUALIZACIÓN DE SKILLS
+                            </h3>
+<div class="space-y-6 relative z-10">
+<p class="text-sm text-slate-400">Análisis de brechas y optimización de capacidades:</p>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-mono text-text-dim">
+<span>PENSAMIENTO LÓGICO</span>
+<span class="text-gold">CARGANDO...</span>
+</div>
+<div class="w-full bg-white/5 h-1">
+<div class="bg-gold h-1 w-3/4 shadow-neon"></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-mono text-text-dim">
+<span>DISCIPLINA</span>
+<span class="text-gold">OPTIMIZANDO...</span>
+</div>
+<div class="w-full bg-white/5 h-1">
+<div class="bg-gold h-1 w-1/2 shadow-neon"></div>
+</div>
+</div>
+<p class="text-sm leading-relaxed text-slate-300 mt-4 border-t border-white/10 pt-4">
+                                    Objetivo: Fortalecer la resolución algorítmica de problemas y la comunicación técnica efectiva.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-dark relative border-t border-gold/20" id="specialization">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-display font-black text-white uppercase tracking-widest mb-2">Especialización <span class="text-transparent bg-clip-text bg-gradient-gold">Profesional</span></h2>
+<div class="h-1 w-24 bg-gold mx-auto shadow-neon"></div>
+</div>
+<div class="mb-16">
+<div class="relative p-1 max-w-4xl mx-auto">
+<div class="absolute inset-0 bg-gradient-gold opacity-10 blur-sm rounded-none"></div>
+<div class="relative bg-black/40 border border-gold/20 p-8 clip-tech">
+<h3 class="text-xl font-display font-bold text-gold mb-4">ESPECIALIZACIÓN</h3>
+<p class="text-lg leading-relaxed text-slate-300 font-light">
+                        Me gustaría especializarme en el área de Desarrollo de Software, ya que considero que es una rama fundamental dentro de la Ingeniería de Sistemas y con gran demanda en el mercado laboral. Me motiva la idea de crear aplicaciones y sistemas que ayuden a resolver problemas reales y mejoren los procesos en empresas e instituciones.
+                    </p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="flex items-start gap-6 group">
+<div class="p-4 border border-gold/30 bg-black text-gold shadow-neon group-hover:bg-gold group-hover:text-black transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-white font-display mb-2 group-hover:text-gold transition-colors">Desarrollo Backend</h3>
+<p class="text-slate-400 text-sm">Arquitectura de servidores y lógica de negocio robusta.</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="p-4 border border-gold/30 bg-black text-gold shadow-neon group-hover:bg-gold group-hover:text-black transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">devices</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-white font-display mb-2 group-hover:text-gold transition-colors">Frontend Moderno</h3>
+<p class="text-slate-400 text-sm">Interfaces reactivas y experiencias de usuario inmersivas.</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="p-4 border border-gold/30 bg-black text-gold shadow-neon group-hover:bg-gold group-hover:text-black transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">database</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-white font-display mb-2 group-hover:text-gold transition-colors">Data Systems</h3>
+<p class="text-slate-400 text-sm">Gestión eficiente y segura de grandes volúmenes de datos.</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-card border border-white/5 p-6 aspect-square flex flex-col items-center justify-center hover:border-gold hover:shadow-neon-strong transition-all duration-300 group">
+<span class="material-symbols-outlined text-5xl text-gray-600 group-hover:text-gold transition-colors mb-4">web</span>
+<span class="font-display font-bold text-white group-hover:text-gold">WEB APPS</span>
+</div>
+<div class="bg-surface-card border border-white/5 p-6 aspect-square flex flex-col items-center justify-center hover:border-gold hover:shadow-neon-strong transition-all duration-300 group mt-8">
+<span class="material-symbols-outlined text-5xl text-gray-600 group-hover:text-gold transition-colors mb-4">smartphone</span>
+<span class="font-display font-bold text-white group-hover:text-gold">MOBILE</span>
+</div>
+<div class="bg-surface-card border border-white/5 p-6 aspect-square flex flex-col items-center justify-center hover:border-gold hover:shadow-neon-strong transition-all duration-300 group -mt-8">
+<span class="material-symbols-outlined text-5xl text-gray-600 group-hover:text-gold transition-colors mb-4">api</span>
+<span class="font-display font-bold text-white group-hover:text-gold">API REST</span>
+</div>
+<div class="bg-surface-card border border-white/5 p-6 aspect-square flex flex-col items-center justify-center hover:border-gold hover:shadow-neon-strong transition-all duration-300 group">
+<span class="material-symbols-outlined text-5xl text-gray-600 group-hover:text-gold transition-colors mb-4">cloud</span>
+<span class="font-display font-bold text-white group-hover:text-gold">CLOUD</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-black-pure relative" id="applications">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg height="100%" width="100%">
+<defs>
+<pattern height="43.4" id="hexagons" patternTransform="scale(2)" patternUnits="userSpaceOnUse" width="50">
+<path d="M25 0 L50 10.85 L50 32.55 L25 43.4 L0 32.55 L0 10.85 Z" fill="none" stroke="#FFD700" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#hexagons)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="text-center max-w-4xl mx-auto mb-20">
+<span class="text-gold font-mono text-sm tracking-widest border border-gold/30 px-3 py-1 bg-black">SECTORES DE IMPACTO</span>
+<h2 class="mt-6 text-4xl font-display font-bold text-white uppercase mb-8">Áreas de <span class="text-gold text-glow">Aplicación</span></h2>
+<div class="bg-surface-card border border-gold/20 p-6 clip-tech shadow-neon bg-black/50 backdrop-blur-sm">
+<p class="text-slate-300 text-lg leading-relaxed font-light">
+<strong class="text-gold block mb-2 font-display tracking-widest text-sm">ÁREAS DE APLICACIÓN DE LA INGENIERÍA DE SISTEMAS</strong>
+                        La Ingeniería de Sistemas se aplica en múltiples áreas como la salud, el derecho, la psicología, la educación, la banca, el comercio y la industria. Es fundamental para la gestión de información, la automatización de procesos y el desarrollo de soluciones tecnológicas. Por ello, es una carrera transversal que contribuye a la transformación digital en casi todos los ámbitos.
+                    </p>
+</div>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<div class="group relative w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] p-1 transition-all duration-500 hover:-translate-y-2">
+<div class="absolute inset-0 bg-gradient-gold opacity-0 group-hover:opacity-100 blur transition-opacity duration-500"></div>
+<div class="relative h-full bg-surface-card border border-white/10 p-8 flex flex-col items-center text-center clip-tech">
+<span class="material-symbols-outlined text-6xl text-gold mb-6 group-hover:scale-110 transition-transform drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]">pulse_alert</span>
+<h3 class="text-xl font-bold text-white font-display uppercase tracking-wider mb-2">Salud</h3>
+<p class="text-xs text-slate-500 font-mono">Bio-informática &amp; Telemedicina</p>
+</div>
+</div>
+<div class="group relative w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] p-1 transition-all duration-500 hover:-translate-y-2 lg:mt-12">
+<div class="absolute inset-0 bg-gradient-gold opacity-0 group-hover:opacity-100 blur transition-opacity duration-500"></div>
+<div class="relative h-full bg-surface-card border border-white/10 p-8 flex flex-col items-center text-center clip-tech">
+<span class="material-symbols-outlined text-6xl text-gold mb-6 group-hover:scale-110 transition-transform drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]">scale</span>
+<h3 class="text-xl font-bold text-white font-display uppercase tracking-wider mb-2">Derecho</h3>
+<p class="text-xs text-slate-500 font-mono">LegalTech &amp; Ciberseguridad</p>
+</div>
+</div>
+<div class="group relative w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] p-1 transition-all duration-500 hover:-translate-y-2">
+<div class="absolute inset-0 bg-gradient-gold opacity-0 group-hover:opacity-100 blur transition-opacity duration-500"></div>
+<div class="relative h-full bg-surface-card border border-white/10 p-8 flex flex-col items-center text-center clip-tech">
+<span class="material-symbols-outlined text-6xl text-gold mb-6 group-hover:scale-110 transition-transform drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]">psychology_alt</span>
+<h3 class="text-xl font-bold text-white font-display uppercase tracking-wider mb-2">Psicología</h3>
+<p class="text-xs text-slate-500 font-mono">IA Conductual &amp; Análisis</p>
+</div>
+</div>
+<div class="group relative w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] p-1 transition-all duration-500 hover:-translate-y-2 lg:mt-12">
+<div class="absolute inset-0 bg-gradient-gold opacity-0 group-hover:opacity-100 blur transition-opacity duration-500"></div>
+<div class="relative h-full bg-surface-card border border-white/10 p-8 flex flex-col items-center text-center clip-tech">
+<span class="material-symbols-outlined text-6xl text-gold mb-6 group-hover:scale-110 transition-transform drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]">child_hat</span>
+<h3 class="text-xl font-bold text-white font-display uppercase tracking-wider mb-2">Educación</h3>
+<p class="text-xs text-slate-500 font-mono">E-Learning &amp; Gamificación</p>
+</div>
+</div>
+<div class="group relative w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] p-1 transition-all duration-500 hover:-translate-y-2 lg:-mt-6">
+<div class="absolute inset-0 bg-gradient-gold opacity-0 group-hover:opacity-100 blur transition-opacity duration-500"></div>
+<div class="relative h-full bg-surface-card border border-white/10 p-8 flex flex-col items-center text-center clip-tech">
+<span class="material-symbols-outlined text-6xl text-gold mb-6 group-hover:scale-110 transition-transform drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]">account_balance</span>
+<h3 class="text-xl font-bold text-white font-display uppercase tracking-wider mb-2">Banca</h3>
+<p class="text-xs text-slate-500 font-mono">Fintech &amp; Blockchain</p>
+</div>
+</div>
+<div class="group relative w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] p-1 transition-all duration-500 hover:-translate-y-2 lg:mt-6">
+<div class="absolute inset-0 bg-gradient-gold opacity-0 group-hover:opacity-100 blur transition-opacity duration-500"></div>
+<div class="relative h-full bg-surface-card border border-white/10 p-8 flex flex-col items-center text-center clip-tech">
+<span class="material-symbols-outlined text-6xl text-gold mb-6 group-hover:scale-110 transition-transform drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]">storefront</span>
+<h3 class="text-xl font-bold text-white font-display uppercase tracking-wider mb-2">Comercio</h3>
+<p class="text-xs text-slate-500 font-mono">E-commerce &amp; Analytics</p>
+</div>
+</div>
+<div class="group relative w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] p-1 transition-all duration-500 hover:-translate-y-2 lg:-mt-6">
+<div class="absolute inset-0 bg-gradient-gold opacity-0 group-hover:opacity-100 blur transition-opacity duration-500"></div>
+<div class="relative h-full bg-surface-card border border-white/10 p-8 flex flex-col items-center text-center clip-tech">
+<span class="material-symbols-outlined text-6xl text-gold mb-6 group-hover:scale-110 transition-transform drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]">factory</span>
+<h3 class="text-xl font-bold text-white font-display uppercase tracking-wider mb-2">Industria</h3>
+<p class="text-xs text-slate-500 font-mono">Automatización &amp; IoT</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="relative isolate overflow-hidden bg-black py-24 sm:py-32" id="contact">
+<div class="absolute inset-0 border-t border-gold/20"></div>
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[1px] bg-gradient-to-r from-transparent via-gold to-transparent shadow-neon"></div>
+<div class="mx-auto max-w-7xl px-6 lg:px-8 text-center relative z-10">
+<div class="mx-auto max-w-2xl bg-surface-card/80 backdrop-blur-md p-10 border border-white/5 shadow-2xl clip-tech">
+<h2 class="text-3xl font-display font-bold tracking-tight text-white sm:text-4xl">¿Listo para colaborar?</h2>
+<p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-slate-400">
+                        Buscando oportunidades de mentoría y desafíos técnicos.
+                    </p>
+<div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
+<a class="w-full sm:w-auto rounded-none bg-gold px-8 py-3 text-sm font-bold text-black-pure shadow-neon hover:bg-white hover:shadow-neon-strong transition-all font-display tracking-widest uppercase" href="mailto:saydaserrano29@gmail.com">
+                            Iniciar Conexión
+                        </a>
+<div class="flex gap-4">
+<a class="group p-3 border border-white/10 bg-black hover:border-gold hover:text-gold transition-all" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+<a class="group p-3 border border-white/10 bg-black hover:border-gold hover:text-gold transition-all" href="#">
+<span class="material-symbols-outlined">call</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute top-1/2 left-1/4 w-64 h-64 bg-gold/10 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute bottom-0 right-1/4 w-96 h-96 bg-gold/5 rounded-full blur-[120px] pointer-events-none"></div>
+</section>
+</main>
+<footer class="bg-surface-dark border-t border-white/10">
+<div class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+<div class="flex justify-center space-x-8 md:order-2">
+<a class="text-slate-500 hover:text-gold transition-colors transform hover:scale-110 duration-300" href="#">
+<span class="sr-only">LinkedIn</span>
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill-rule="evenodd"></path>
+</svg>
+</a>
+<a class="text-slate-500 hover:text-gold transition-colors transform hover:scale-110 duration-300" href="#">
+<span class="sr-only">GitHub</span>
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+<div class="mt-8 md:order-1 md:mt-0">
+<p class="text-center text-xs leading-5 text-slate-600 font-mono">
+                    SYSTEM STATUS: NORMAL | © 2026 Sayda Serrano.
+                </p>
+</div>
+</div>
+</footer>
+
+</body></html>
